@@ -1,3 +1,8 @@
 10/05 ソフトウェア開発演習 第一回レポート課題
 
-
+ git演習
+  gitレポジトリの作成		    : git init
+  インデックス(commit候補)へ登録    : git add <file/directry name>
+  インデックスの内容をコミット      : git commit -m “<comment>”
+  ログの確認			    : git log
+  
