@@ -5,4 +5,8 @@
   インデックス(commit候補)へ登録    : git add <file/directry name>
   インデックスの内容をコミット      : git commit -m “<comment>”
   ログの確認			    : git log
+  ブランチの作成		    : git branch "<branch name>"
+  現在のブランチの確認		    : git branch
+  ブランチの移動		    : git checkout "<branch name>"
+  マージ			    : git merge "<branch name>"
   
