@@ -8,5 +8,3 @@
   ブランチの作成		    : git branch "<branch name>"
   現在のブランチの確認		    : git branch
   ブランチの移動		    : git checkout "<branch name>"
-  マージ			    : git merge "<branch name>"
-  
