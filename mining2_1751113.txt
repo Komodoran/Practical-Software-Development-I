@@ -3,3 +3,35 @@
  git演習
   git上のレポジトリからコピーを取得 : git clone <URL>
 
+ 演習課題(1/2)
+ 1-1  git log --oneline | wc -l
+      >> 47820
+ 1-2  git shortlog -s | wc -l
+      >> 102
+ 1-3  git shortlog -s | sort -r | head -5
+      >>  14780  nobu
+          4717  akr
+          3496  svn
+          2559  matz
+          2501  naruse
+ 1-4  git show v1_9_0_0 | grep "Date"
+      >>  Date:   Tue Dec 25 16:27:31 2007 +0000
+ 
+ 演習課題(2/2)
+ 2-1  git log --pretty=format:'%cn %s' |grep -i "bug"| awk '{count[$1]++}END{for(i in count)print count[i], i}' | sort -n -r | head -5
+      >> 467 nobu
+         319 ko1
+         274 naruse
+         217 drbrain
+         134 zzak
+ 2-2  git log --oneline -- win32/win32.c | wc -l
+      >> 664
+ 2-3  find . -type f | wc -l
+      >> 8493
+ 2-4  git log --oneline --name-only -p win32/ | awk '{count[$1]++}END{for(i in count)print count[i], i}' |sort -n -r |head -5
+      >> 664 win32/win32.c
+         493 win32/Makefile.sub
+         85 win32/win32.h
+         85 win32/setup.mak
+         64 win32/file.c
+

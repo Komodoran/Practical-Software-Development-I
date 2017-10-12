@@ -1,0 +1,8 @@
+BEGIN {
+　colname[$1]++;
+}
+END {
+  for(i in colname){
+    print i " " colname[i];
+  }
+}
